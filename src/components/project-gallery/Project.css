@@ -1,0 +1,13 @@
+.project {
+  background-color: var(--primary-light);
+  color: var(--text-color);
+}
+
+.project ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project li {
+  margin: 10px 0;
+}

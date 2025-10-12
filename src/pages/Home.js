@@ -1,12 +1,18 @@
 import React from 'react';
 import '../styles/Home.css';
+import About from '../components/about-section/About.js';
+import Project from '../components/project-gallery/Project.js';
 
 function Home() {
   return (
-    <section id="home" className="home">
-      <h2>Welcome!</h2>
-      <p>Hi, I'm Brittney, a passionate developer building cool things with code.</p>
-    </section>
+    <>
+      <section id="home" className="home">
+        <h1>My Portfolio</h1>
+        <h3>Brittney Ha</h3>
+      </section>
+      <About />
+      <Project />
+    </>
   );
 }
 

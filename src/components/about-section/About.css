@@ -1,0 +1,27 @@
+.about {
+    background-color: var(--background, #2E353B); /* smoky steel blue */
+    color: var(--text, #ffffff);
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 55%;
+    text-align: center;
+}
+
+.about-content h2 {
+    color: var(--accent, #FFD700); /* gold accent */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-muted, #e2e2e2);
+    margin-bottom: 15px;
+}
