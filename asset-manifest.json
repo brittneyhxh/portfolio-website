@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/brittneyhxh/portfolio-website/static/css/main.820f2db9.css",
-    "main.js": "/brittneyhxh/portfolio-website/static/js/main.a333cd61.js",
-    "static/js/453.aff64078.chunk.js": "/brittneyhxh/portfolio-website/static/js/453.aff64078.chunk.js",
-    "index.html": "/brittneyhxh/portfolio-website/index.html",
-    "main.820f2db9.css.map": "/brittneyhxh/portfolio-website/static/css/main.820f2db9.css.map",
-    "main.a333cd61.js.map": "/brittneyhxh/portfolio-website/static/js/main.a333cd61.js.map",
-    "453.aff64078.chunk.js.map": "/brittneyhxh/portfolio-website/static/js/453.aff64078.chunk.js.map"
+    "main.css": "/brittneyhxh.github.io/portfolio-website/static/css/main.820f2db9.css",
+    "main.js": "/brittneyhxh.github.io/portfolio-website/static/js/main.90dab348.js",
+    "static/js/453.aff64078.chunk.js": "/brittneyhxh.github.io/portfolio-website/static/js/453.aff64078.chunk.js",
+    "index.html": "/brittneyhxh.github.io/portfolio-website/index.html",
+    "main.820f2db9.css.map": "/brittneyhxh.github.io/portfolio-website/static/css/main.820f2db9.css.map",
+    "main.90dab348.js.map": "/brittneyhxh.github.io/portfolio-website/static/js/main.90dab348.js.map",
+    "453.aff64078.chunk.js.map": "/brittneyhxh.github.io/portfolio-website/static/js/453.aff64078.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.820f2db9.css",
-    "static/js/main.a333cd61.js"
+    "static/js/main.90dab348.js"
   ]
 }
