@@ -6,9 +6,11 @@ import Project from '../components/project-gallery/Project.js';
 function Home() {
   return (
     <>
-      <section id="home" className="home">
-        <h1>My Portfolio</h1>
-        <h3>Brittney Ha</h3>
+      <section className="home">
+        <section className="home-header">
+          <h1>My Portfolio</h1>
+          <h3>BRITTNEY HA</h3>
+        </section>
       </section>
       <About />
       <Project />

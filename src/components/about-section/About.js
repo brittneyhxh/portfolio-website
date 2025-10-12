@@ -7,7 +7,7 @@ function About() {
       <div className="about-content">
         <h2>About Me</h2>
         <p>
-            Hi! I’m <strong>Brittney Ha</strong>, an inspired developer who loves to create.
+            Hi, I’m Brittney, an inspired developer who loves to create!
         </p>
         <p>
             I am passionate about transforming data into impactful insight. 

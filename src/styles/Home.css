@@ -1,5 +1,26 @@
 .home {
-  background-color: var(--primary-light);
-  color: var(--text-color);
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  height: 20%;           /* adjust height as needed */
+  background-color: var(--primary-light); /* optional page background */
 }
 
+.home-header {
+  background-color: whitesmoke; /* semi-transparent white */
+  padding: 15px 50px;
+  border-radius: 5px;
+  width: 75%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.home-header h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
