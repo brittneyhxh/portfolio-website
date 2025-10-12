@@ -1,0 +1,84 @@
+.project-card {
+  display: flex;
+  flex-direction: row; /* image left, info right */
+  align-items: center;
+  background-color: var(--primary-dark, #2E353B);
+  color: white;
+  border: 2px solid whitesmoke; /* subtle gold border */
+  border-radius: 12px;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.project-image {
+  width: 200px;        /* fixed width for images */
+  height: 120px;       /* adjust as needed */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.project-info h3 {
+  color: var(--accent, #FFD700);
+  margin: 0 0 10px 0;
+}
+
+.project-info p {
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+/* Transparent box around link */
+.project-link {
+  display: inline-block;              /* so padding works */
+  padding: 8px 20px;                  /* some space inside the box */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* semi-transparent white border */
+  border-radius: 12px;
+  color: white;                        /* default text color */
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;                  /* for animated underline */
+  transition: all 0.3s ease;
+  margin-top: 10px;                    /* spacing from tags/description */
+}
+
+/* Animated underline */
+.project-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #FFD700; /* gold */
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+.project-link:hover {
+  color: #FFD700;                       /* text turns gold */
+  border-color: #FFD700;                /* border turns gold too */
+}
+
+.project-link:hover::after {
+  width: 100%;                           /* underline expands */
+}
+
+
+.project-tags {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-tag {
+  background-color: var(--background, #2E353B);
+  color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
