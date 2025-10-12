@@ -11,8 +11,14 @@
   z-index: 1000;
 }
 
+.header img { 
+  width: 3rem;
+  height: 2rem;
+}
+
 .header nav {
   display: flex;
+  align-items: center;
   gap: 25px;
 }
 
@@ -22,10 +28,25 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
+  text-decoration-line: none;
   position: relative;
 }
 
 .header nav a::after {
-  content: '';
-  display: bl
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent, #e6b800); /* gold/mango accent */
+  transition: width 0.3s ease;
+}
+
+.header nav a:hover {
+  color: var(--accent, #e6b800);
+}
+
+.header nav a:hover::after {
+  width: 100%;
 }

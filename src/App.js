@@ -1,8 +1,8 @@
 import React from 'react';
-import './styles/App.css';
-import Header from './Header';
-import Home from './Home';
-import Projects from './Projects';
+import './App.css';
+import Header from './pages/Header';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 function App() {
   return (

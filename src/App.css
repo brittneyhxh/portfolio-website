@@ -4,13 +4,13 @@
   --primary-light: #A3B6C1;
   --text-color: #333333;
   --background-light: #F5F5F5;
-  --accent: #FFD700;
+  --accent: #e6b800;
 }
 
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   background-color: var(--background-light);
   color: var(--text-color);
 }
