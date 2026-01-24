@@ -1,0 +1,18 @@
+[
+  {
+    "title": "React",
+    "description": "Building dynamic UI components and single-page applications."
+  },
+  {
+    "title": "UX/UI Design",
+    "description": "Creating intuitive and user-friendly interfaces."
+  },
+  {
+    "title": "Performance",
+    "description": "Optimizing web apps and solutions for efficiency and best practices."
+  },
+  {
+    "title": "Git (GitHub/GitLab)",
+    "description": "Version control, collaboration, and workflow management."
+  }
+]

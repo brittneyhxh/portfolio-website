@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from "react-router-dom";
 import '../styles/Header.css';
 import logo from '../img/logo.png';
@@ -12,8 +11,10 @@ function Header() {
               <img id="home-logo" src={logo} alt="not found" style={{ cursor: "pointer" }}></img>
           </NavLink>
         </div>
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
+        <NavLink to="/" end>Home</NavLink>
+        {/* <NavLink to="/projects" end>Projects</NavLink> */}
+        {/* <NavLink to="/tech-stack" end>Technology</NavLink> */}
+        <NavLink to="/about" end>About</NavLink>
       </nav>
     </header>
   );

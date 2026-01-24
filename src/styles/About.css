@@ -1,0 +1,123 @@
+body {
+    background-color: var(--background, #2E353B); /* smoky steel blue */
+}
+
+.about {
+    background-color: var(--background, #2E353B);
+    color: var(--text, #ffffff);
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    align-items: center;    /* center horizontally */
+}
+
+/* ---------- Interests Cards ---------- */
+
+.interests h3 {
+    color: var(--accent, #FFD700);
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+.interest-cards {
+    display: flex;
+    flex-direction: column; /* stack as rows */
+    gap: 20px; /* space between each card */
+    align-items: center; /* center horizontally */
+}
+
+.interest-card {
+    background-color: #3a4047; /* slightly lighter than background */
+    border: 1px solid var(--accent, #FFD700);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* full width inside container */
+    max-width: 600px; /* constrain max width */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.interest-card h4 {
+    color: var(--accent, #FFD700);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.interest-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-muted, #e2e2e2);
+}
+
+/* ---------- Tech Stack Section ---------- */
+
+.tech-stack {
+    margin-top: 50px;
+}
+
+.tech-stack h3 {
+    color: var(--accent, #FFD700);
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+
+.tech-cards {
+    display: flex;
+    flex-direction: row; /* stack cards vertically */
+    gap: 20px;
+    align-items: center; /* center horizontally */
+}
+
+.tech-card {
+    background-color: #3a4047;
+    border: 1px solid var(--accent, #FFD700);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* full-width row cards */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tech-card h4 {
+    color: var(--accent, #FFD700);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.tech-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-muted, #e2e2e2);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 20px;
+    }
+    .about-content {
+        max-width: 100%;
+    }
+    .interest-card {
+        width: 100%; /* stack interests cards on small screens */
+    }
+    .tech-card {
+        max-width: 100%;
+    }
+}

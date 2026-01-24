@@ -3,6 +3,7 @@ import './Project.css';
 import ProjectCard from './ProjectCard.js';
 import portfolio_img from '../../img/logo.png';
 import herai_img from '../../img/herai.png';
+import liberty_img from '../../img/liberty_app.png';
 
 function Project() {
     /* list of projects */
@@ -20,8 +21,14 @@ function Project() {
       image: herai_img,
       link: 'https://herai-ucalgary.ca/',
       tags: ['React', 'CSS', 'JavaScript']
+    },
+    {
+      title: 'LIBERTY Library App',
+      description: '~ Designed and developed a library web application for my database management course (CPSC 471)',
+      image: liberty_img,
+      link: 'https://github.com/brittneyhxh/dbms-liberty-app',
+      tags: ['SQL', 'SQLAlchemy', 'MySQL', 'Python', 'Flask']
     }
-
   ];
     return (
         <section className="project">
