@@ -1,9 +1,9 @@
-import React from 'react';
 import './Project.css';
 import ProjectCard from './ProjectCard.js';
 import portfolio_img from '../../img/logo.png';
 import herai_img from '../../img/herai.png';
 import liberty_img from '../../img/liberty_app.png';
+import lvl_up_img from '../../img/lvl-up.png';
 
 function Project() {
     /* list of projects */
@@ -28,6 +28,13 @@ function Project() {
       image: liberty_img,
       link: 'https://github.com/brittneyhxh/dbms-liberty-app',
       tags: ['SQL', 'SQLAlchemy', 'MySQL', 'Python', 'Flask']
+    },
+    {
+      title: 'AI Workshop - Sentiment Analysis',
+      description: '~ Designed and delivered a hands-on introduction to building a sentiment analysis model using TensorFlow and Keras.',
+      image: lvl_up_img,
+      link: "/sentiment-analysis",
+      tags: ['Python', 'scikit-learn', 'Jupyter Notebook', 'AI/ML', 'Technical Communication']
     }
   ];
     return (

@@ -3,6 +3,7 @@ import './App.css';
 import Header from './pages/Header';
 import Home from './pages/Home';
 import About from './pages/About';
+import SentimentAnalysis from './pages/Workshops/SentimentAnalysis';
 // import Projects from './pages/Projects';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
+        <Route path="/sentiment-analysis" element={<SentimentAnalysis />}/>
       </Routes>
     </>
   );
