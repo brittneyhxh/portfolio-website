@@ -18,5 +18,57 @@
   {
     "title": "Databricks",
     "description": "Use Databricks SQL to create queries and dashboards. Maintain data governance standards and controls as Catalog Manager."
+  },
+  {
+    "title": "Python",
+    "description": "Use Python for data analysis, scripting, and automation tasks."
+  },
+  {
+    "title": "SQL",
+    "description": "Write SQL queries for data manipulation and analysis."
+  },
+  {
+    "title": "Data Visualization",
+    "description": "Create visual representations of data to communicate insights effectively."
+  },
+  {
+    "title": "NextJS",
+    "description": "Build React applications."
+  },
+  {
+    "title": "Figma",
+    "description": "Design and prototype user interfaces and experiences."
+  },
+  {
+    "title": "Streamlit",
+    "description": "Build and deploy data apps/dashboards using Python."
+  },
+  {
+    "title": "Snowflake",
+    "description": "Data warehousing and analytics."
+  },
+  {
+    "title": "Jira",
+    "description": "Project management and issue tracking as a project lead."
+  },
+  {
+    "title": "Trello",
+    "description": "Project management and organization."
+  },
+  {
+    "title": "Docker",
+    "description": "Containerization and deployment of applications."
+  },
+  {
+    "title": "PostGresSQL",
+    "description": "Database management system."
+  },
+  {
+    "title": "Prisma",
+    "description": "Database toolkit for TypeScript and Node.js. Visualize and manage databases with an intuitive interface."
+  },
+  {
+    "title": "GraphQL",
+    "description": "Query language for APIs and runtime for executing those queries."
   }
 ]
