@@ -4,6 +4,7 @@ import portfolio_img from '../../img/logo.png';
 import herai_img from '../../img/herai.png';
 import liberty_img from '../../img/liberty_app.png';
 import lvl_up_img from '../../img/lvl-up.png';
+import chronos_img from '../../img/chronos.jpg';
 
 function Project() {
     /* list of projects */
@@ -35,6 +36,13 @@ function Project() {
       image: lvl_up_img,
       link: "/sentiment-analysis",
       tags: ['Python', 'scikit-learn', 'Jupyter Notebook', 'AI/ML', 'Technical Communication']
+    },
+    {
+      title: 'Chronos Calendar',
+      description: '~ Created a calendar conversion website between the Gregorian calendar and lunar calendar',
+      image: chronos_img,
+      link: 'https://brittneyhxh.github.io/chronos-calendar/',
+      tags: [`HTML`]
     }
   ];
     return (
