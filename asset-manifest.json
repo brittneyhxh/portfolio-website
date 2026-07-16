@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.6e6b6356.css",
-    "main.js": "/portfolio-website/static/js/main.12a46a20.js",
+    "main.js": "/portfolio-website/static/js/main.b2dbd022.js",
     "static/js/453.aff64078.chunk.js": "/portfolio-website/static/js/453.aff64078.chunk.js",
     "static/media/sentiment-slide-3.png": "/portfolio-website/static/media/sentiment-slide-3.3d751dc08af15b45879c.png",
     "static/media/sentiment-slide-4.png": "/portfolio-website/static/media/sentiment-slide-4.3721560f14e2cc4aa6cf.png",
@@ -9,14 +9,15 @@
     "static/media/sentiment-slide-2.png": "/portfolio-website/static/media/sentiment-slide-2.dd280bbf8fd27abc2f6e.png",
     "static/media/liberty_app.png": "/portfolio-website/static/media/liberty_app.1fcc798571080da962c4.png",
     "static/media/herai.png": "/portfolio-website/static/media/herai.db9ef947663e766fe3e2.png",
+    "static/media/chronos.jpg": "/portfolio-website/static/media/chronos.7502ffdb3993127bbda7.jpg",
     "static/media/logo.png": "/portfolio-website/static/media/logo.432094bb1811efe70fb4.png",
     "index.html": "/portfolio-website/index.html",
     "main.6e6b6356.css.map": "/portfolio-website/static/css/main.6e6b6356.css.map",
-    "main.12a46a20.js.map": "/portfolio-website/static/js/main.12a46a20.js.map",
+    "main.b2dbd022.js.map": "/portfolio-website/static/js/main.b2dbd022.js.map",
     "453.aff64078.chunk.js.map": "/portfolio-website/static/js/453.aff64078.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e6b6356.css",
-    "static/js/main.12a46a20.js"
+    "static/js/main.b2dbd022.js"
   ]
 }
