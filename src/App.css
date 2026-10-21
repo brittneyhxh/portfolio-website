@@ -5,12 +5,14 @@
   --text-color: #333333;
   --background-light: #F5F5F5;
   --accent: #e6b800;
+  --ink: #2E353B;
+  --paper: #FBF7EA;
 }
 
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  /* font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; */
   background-color: var(--background-light);
   color: var(--text-color);
 }
@@ -57,5 +59,9 @@ button:focus {
   outline: none;
 }
 
-
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
 

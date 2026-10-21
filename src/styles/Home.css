@@ -1,26 +1,107 @@
 .home {
-  display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* center vertically */
-  height: 20%;           /* adjust height as needed */
+  padding: 50 20 52px;
   background-color: var(--primary-light); /* optional page background */
 }
 
 .home-header {
-  background-color: whitesmoke; /* semi-transparent white */
-  padding: 15px 50px;
-  border-radius: 5px;
-  width: 75%;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: min(100%, 720px);
+  margin: 0 auto;
+  padding: 28px 40px 32px;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  box-shadow: 8px 8px 0 var(--primary-dark);
+
 }
 
-.home-header h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+/* name first, "My Portfolio" underneath */
+.home-header h3 {
+  order: 1;
+  margin: 0;
+  font-size: clamp(2.2rem, 7vw, 3.8rem);
+  letter-spacing: 0.08em;
+  color: var(--ink);
 }
 
-.home-header p {
-  font-size: 1.2rem;
-  line-height: 1.5;
+.home-header h1 {
+  order: 2;
+  margin: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  text-decoration: underline wavy var(--accent) 2px;
+  text-underline-offset: 6px;
+}
+
+/* hero */
+.tagline-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 480px);
+  align-items: center;
+  gap: 56px;
+  padding: 80px max(40px, calc((100% - 1100px) / 2));
+  background-color: var(--primary-dark);
+  text-align: left;
+}
+
+.tagline {
+  margin: 0 0 22px;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: white;
+}
+
+/* indent steps up toward the right, like a climb */
+.tagline span {
+  display: block;
+}
+.tagline span:nth-child(1) { padding-left: 2.2em; }
+.tagline span:nth-child(2) { padding-left: 1.1em; }
+
+.tagline-text p {
+  max-width: 34ch;
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #e8eef1;
+}
+
+/* framed like a pinned print */
+.mountain-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border: 10px solid whitesmoke;
+  border-radius: 4px;
+  box-shadow: 10px 10px 0 var(--accent);
+  transform: rotate(1.5deg);
+}
+
+@media (max-width: 860px) {
+  .tagline-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+    padding: 56px 28px 64px;
+  }
+  .tagline span:nth-child(n) {
+    padding-left: 0;
+  }
+  .mountain-art {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header {
+    padding: 22px 20px 26px;
+  }
 }

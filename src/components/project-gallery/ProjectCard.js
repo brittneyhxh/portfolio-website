@@ -5,45 +5,57 @@ function ProjectCard({ title, description, image, link, tags }) {
 
   const isExternal = link && link.startsWith("http");
 
+  // remove leading ~
+  const method = description ? description.replace(/^~\s*/, "") : "";
+
   return (
-    <div className="project-card">
+    <article className="project-card">
       {image && <img src={image} alt={title} className="project-image" />}
       <div className="project-info">
         <h3>{title}</h3>
-        <p>{description}</p>
 
-        {/* Tags */}
+        {/* Tags = ingredients */}
         {tags && tags.length > 0 && (
-          <div className="project-tags">
-            {tags.map((tag, index) => (
-              <span key={index} className="project-tag">{tag}</span>
-            ))}
+          <div className="project-ingredients">
+            <h4>Ingredients</h4>
+            <ul className="project-tags">
+              {tags.map((tag) => (
+                <li key={tag} className="project-tag">{tag}</li>
+              ))}
+            </ul>
           </div>
         )}
 
-       {/* Link Handling */}
+        {/* Description = method */}
+        <div className="project-method">
+          <h4>Method</h4>
+          <p>{method}</p>
+        </div>
+
+        {/* Link Handling */}
         {link && (
           isExternal ? (
-            <a 
+            <a
               href={link}
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
+              aria-label={`View project: ${title}`}
             >
-              View Project
+              View project
             </a>
           ) : (
-            <NavLink 
+            <NavLink
               to={link}
               className="project-link"
+              aria-label={`View project: ${title}`}
             >
-              View Project
+              View project
             </NavLink>
           )
         )}
-
       </div>
-    </div>
+    </article>
   );
 }
 

@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import '../styles/Header.css';
 import logo from '../img/logo.png';
 
+const CONNECT_URL="https://www.linkedin.com/in/brittney-ha/"
+
 function Header() {
   return (
     <header className="header">
@@ -16,6 +18,7 @@ function Header() {
         {/* <NavLink to="/tech-stack" end>Technology</NavLink> */}
         <NavLink to="/about" end>About</NavLink>
       </nav>
+      <a className="nav-cta" href={CONNECT_URL}>Let’s connect</a>
     </header>
   );
 }
