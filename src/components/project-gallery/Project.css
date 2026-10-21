@@ -8,7 +8,7 @@
   margin: 0;
   font-size: clamp(2.2rem, 5vw, 3rem);
   color: var(--ink);
-  text-decoration: underline wavy var(--accent) 2px;
+  text-decoration: underline double var(--accent) 2px;
   text-underline-offset: 8px;
 }
 

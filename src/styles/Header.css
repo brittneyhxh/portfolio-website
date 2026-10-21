@@ -1,11 +1,11 @@
 .header {
-  background-color: var(--primary-dark);
-  color: white;
+  background-color: var(--primary-light);
+  color: var(--ink);
   padding: 15px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-bottom: 3px solid var(--accent);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -25,12 +25,13 @@
 }
 
 .header nav a {
-  color: white;
+  color: var(--ink);
   font-weight: 600;
   letter-spacing: 0.5px;
+  text-decoration: none;
   transition: color 0.3s ease;
-  text-decoration-line: none;
   position: relative;
+  padding: 4px 0;
 }
 
 .header nav a::after {
@@ -49,7 +50,7 @@
   color: var(--accent);
 }
 
-.header nav a:hover::after 
+.header nav a:hover::after,
 .header nav a:active::after {
   width: 100%;
 }
@@ -60,7 +61,7 @@
 
 .nav-cta {
   background-color: var(--accent);
-  color: var(--ink);
+  color: var(--paper);
   font-weight: 700;
   text-decoration: none;
   padding: 9px 22px;
@@ -69,7 +70,7 @@
 }
 
 .nav-cta:hover {
-  background-color: #ffd633;
+  background-color: var(--accent-bright);
   transform: translateY(-2px);
 }
 
@@ -84,4 +85,8 @@
     padding: 8px 14px;
     font-size: 0.9rem;
   }
+}
+
+.header a:focus-visible {
+  outline-color: var(--accent-bright);
 }

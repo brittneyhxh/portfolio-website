@@ -1,12 +1,13 @@
 :root {
-  --primary: #567A8A;
-  --primary-dark: #3E5561;
-  --primary-light: #A3B6C1;
-  --text-color: #333333;
-  --background-light: #F5F5F5;
-  --accent: #e6b800;
-  --ink: #2E353B;
-  --paper: #FBF7EA;
+  --primary: #6B635B;
+  --primary-dark: #1A1816;
+  --primary-light: #EFEAE1;
+  --text-color: #1A1816;
+  --background-light: #F5F1EA;
+  --accent: #77351D;
+  --accent-bright: #E3A07F;
+  --ink: #1A1816;
+  --paper: #F5F1EA;
 }
 
 
@@ -37,7 +38,7 @@ section {
 }
 
 button {
-  background: linear-gradient(135deg, var(--accent), #e6b800);
+  background: linear-gradient(135deg, var(--accent));
   color: var(--primary-dark);
   border: none;
   padding: 12px 28px;
@@ -52,7 +53,7 @@ button {
 button:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-  background: linear-gradient(135deg, #FFD700, #e6b800);
+  background: linear-gradient(135deg, var(--accent-bright), var(--accent));
 }
 
 button:focus {

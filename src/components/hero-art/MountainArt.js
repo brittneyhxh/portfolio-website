@@ -1,4 +1,4 @@
-// Hand-inked mountain scene
+// Inked mountain scene (AI generated)
 const pines = [[28, 404], [52, 394], [470, 366], [497, 394]]; // [x, baseY]
 
 function MountainArt() {
@@ -11,8 +11,8 @@ function MountainArt() {
     >
       <defs>
         <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#CBD9E0" />
-          <stop offset="1" stopColor="#F6E7A8" />
+          <stop offset="0" stopColor="#F5F1EA" />
+          <stop offset="1" stopColor="#F0CDB4" />
         </linearGradient>
         <filter id="ink-wobble" x="-2%" y="-2%" width="104%" height="104%">
           <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4" result="noise" />
@@ -22,10 +22,10 @@ function MountainArt() {
 
       <rect width="520" height="420" fill="url(#sky-grad)" />
 
-      <g filter="url(#ink-wobble)" stroke="#2E353B" strokeLinejoin="round" strokeLinecap="round">
+      <g filter="url(#ink-wobble)" stroke="#1A1816" strokeLinejoin="round" strokeLinecap="round">
         {/* sun */}
-        <circle cx="385" cy="118" r="44" fill="#e6b800" strokeWidth="2" />
-        <circle cx="385" cy="118" r="55" fill="none" stroke="#e6b800" strokeWidth="2" strokeDasharray="4 6" />
+        <circle cx="385" cy="118" r="44" fill="#A0452A" strokeWidth="2" />
+        <circle cx="385" cy="118" r="55" fill="none" stroke="#A0452A" strokeWidth="2" strokeDasharray="4 6" />
 
         {/* clouds + birds */}
         <g fill="none" stroke="#567A8A" strokeWidth="2.5" opacity="0.55">
@@ -58,7 +58,7 @@ function MountainArt() {
           fill="#3E5561"
           strokeWidth="2.5"
         />
-        <path d="M275 130 L365 300 L292 300 L283 215 Z" fill="#2E353B" stroke="none" opacity="0.35" />
+        <path d="M275 130 L365 300 L292 300 L283 215 Z" fill="#1A1816" stroke="none" opacity="0.35" />
         <path d="M150 330 l10 14 M162 322 l10 14 M174 330 l9 12" fill="none" stroke="#A3B6C1" strokeWidth="1.6" opacity="0.5" />
 
         {/* snow cap */}
@@ -68,17 +68,17 @@ function MountainArt() {
         <path
           d="M120 412 C 200 404, 300 396, 292 360 S 205 340, 240 308 S 312 292, 272 258 S 242 230, 270 198 S 272 162, 275 140"
           fill="none"
-          stroke="#e6b800"
+          stroke="#A0452A"
           strokeWidth="3"
           strokeDasharray="2 7"
         />
 
         {/* summit flag */}
         <path d="M275 132 L275 106" strokeWidth="2.5" fill="none" />
-        <path d="M275 106 L296 113 L275 121 Z" fill="#e6b800" strokeWidth="1.5" />
+        <path d="M275 106 L296 113 L275 121 Z" fill="#A0452A" strokeWidth="1.5" />
 
         {/* pines */}
-        <g fill="#2E353B" strokeWidth="1">
+        <g fill="#1A1816" strokeWidth="1">
           {pines.map(([x, y]) => (
             <path key={x} d={`M${x} ${y - 24} L${x - 10} ${y} L${x + 10} ${y} Z`} />
           ))}

@@ -14,10 +14,16 @@ function ProjectCard({ title, description, image, link, tags }) {
       <div className="project-info">
         <h3>{title}</h3>
 
+
+        {/* Description = method */}
+        <div className="project-method">
+          <h4>Method to the Madness</h4>
+          <p>{method}</p>
+        </div>
+
         {/* Tags = ingredients */}
         {tags && tags.length > 0 && (
           <div className="project-ingredients">
-            <h4>Ingredients</h4>
             <ul className="project-tags">
               {tags.map((tag) => (
                 <li key={tag} className="project-tag">{tag}</li>
@@ -25,12 +31,6 @@ function ProjectCard({ title, description, image, link, tags }) {
             </ul>
           </div>
         )}
-
-        {/* Description = method */}
-        <div className="project-method">
-          <h4>Method</h4>
-          <p>{method}</p>
-        </div>
 
         {/* Link Handling */}
         {link && (

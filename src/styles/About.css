@@ -1,10 +1,10 @@
 body {
-    background-color: var(--background, #2E353B); /* smoky steel blue */
+    background-color: var(--primary-light);
 }
 
 .about {
-    background-color: var(--background, #2E353B);
-    color: var(--text, #ffffff);
+    background-color: var(--paper);
+    color: var(--text, var(--ink));
     display: flex;
     flex-direction: column; /* stack children vertically */
     align-items: center;    /* center horizontally */
@@ -13,7 +13,7 @@ body {
 /* ---------- Interests Cards ---------- */
 
 .interests h3 {
-    color: var(--accent, #FFD700);
+    color: var(--accent);
     font-size: 1.5rem;
     margin-bottom: 25px;
     letter-spacing: 0.8px;
@@ -28,8 +28,8 @@ body {
 }
 
 .interest-card {
-    background-color: #3a4047; /* slightly lighter than background */
-    border: 1px solid var(--accent, #FFD700);
+    background-color: var(--paper); /* slightly lighter than background */
+    border: 1px solid var(--accent);
     border-radius: 10px;
     padding: 20px;
     width: 100%; /* full width inside container */
@@ -44,7 +44,7 @@ body {
 }
 
 .interest-card h4 {
-    color: var(--accent, #FFD700);
+    color: var(--accent);
     margin-bottom: 10px;
     font-size: 1.1rem;
 }
@@ -52,7 +52,7 @@ body {
 .interest-card p {
     font-size: 0.95rem;
     line-height: 1.5;
-    color: var(--text-muted, #e2e2e2);
+    color: var(--text-muted, --ink);
 }
 
 /* ---------- Tech Stack Section ---------- */
@@ -62,7 +62,7 @@ body {
 }
 
 .tech-stack h3 {
-    color: var(--accent, #FFD700);
+    color: var(--accent);
     font-size: 1.5rem;
     margin-bottom: 25px;
     letter-spacing: 0.8px;
@@ -78,8 +78,8 @@ body {
 }
 
 .tech-card {
-    background-color: #3a4047;
-    border: 1px solid var(--accent, #FFD700);
+    background-color: var(--primary-light);
+    border: 1px solid var(--accent);
     border-radius: 10px;
     padding: 20px;
 
@@ -101,7 +101,7 @@ body {
 }
 
 .tech-card h4 {
-    color: var(--accent, #FFD700);
+    color: var(--accent);
     margin-bottom: 10px;
     font-size: 1.1rem;
 }
@@ -109,7 +109,7 @@ body {
 .tech-card p {
     font-size: 0.95rem;
     line-height: 1.5;
-    color: var(--text-muted, #e2e2e2);
+    color: var(--text-muted, --ink);
 }
 
 /* ---------- Responsive ---------- */
@@ -136,6 +136,6 @@ body {
 /* other */
 .interests h3,
 .tech-stack h3 {
-    text-decoration: underline wavy var(--accent, #FFD700) 2px;
+    text-decoration: underline double var(--accent-bright) 2px;
     text-underline-offset: 8px;
 }

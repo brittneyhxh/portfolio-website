@@ -16,9 +16,7 @@ function Home() {
           <h3>BRITTNEY HA</h3>
         </section>
       </section>
-      
-      <About />
-      <Project />
+
       <section className="tagline-hero">
         <div className="tagline-text">
           <h2 className="tagline">
@@ -33,7 +31,7 @@ function Home() {
         </div>
         <MountainArt />
       </section>
-
+      
       <About />
       <Project />
     </>
