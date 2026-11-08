@@ -5,6 +5,7 @@ import herai_img from '../../img/herai.png';
 import liberty_img from '../../img/liberty_app.png';
 import lvl_up_img from '../../img/lvl-up.png';
 import chronos_img from '../../img/chronos.jpg';
+import halloween_f26_img from '../../img/halloween-linux-workshop-f26.png';
 
 function Project() {
     /* list of projects */
@@ -43,6 +44,13 @@ function Project() {
       image: chronos_img,
       link: 'https://brittneyhxh.github.io/chronos-calendar/',
       tags: [`HTML`]
+    },
+    {
+      title: 'Virtual Linux Escape Room',
+      description: '~ Linux command line escape room for Fall 2026 Halloween-themed workshop led by the team at HerAI 🧙‍♀️',
+      image: halloween_f26_img,
+      link: 'https://github.com/HerAI-UofC/HerAI_Halloween_Workshop_F2026',
+      tags: [`Linux`, `Bash`, `Docker`, `AWS EC2`]
     }
   ];
     return (
